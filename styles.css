@@ -1,8 +1,19 @@
+html{
+  scroll-behavior: smooth;
+}
+h1{
+  display: inline-block;
+  padding:20% 20%;
+  font-family: SixtyFour;
+  font-size: 20px;
+}
 .btn {
+    cursor: pointer;
     background-color: cornflowerblue;
     color: yellow;
     padding: 12px;
     font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: none;
   }
   .btn:hover, .btn:focus {
@@ -11,6 +22,7 @@
 
   .dropdown {
     display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   .content {
     display: none;
