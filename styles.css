@@ -1,55 +1,77 @@
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(145,234,255,1) 44%, rgba(251,255,197,1) 89%);
+
+body {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(145, 234, 255, 1) 44%, rgb(253, 255, 222) 89%);
+  width: 1200px;
+  margin: 0 auto;
 }
-h1{
-  display: inline-block;
-  padding:30% 20%;
-  font-family: SixtyFour;
+
+#head {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+h1 {
+  padding: 10% 10%;
+  position: relative;
+  font-family: Reddit Mono;
+  font-size: 15px;
+}
+
+a {
+  color: cornflowerblue;
+}
+
+#portfolio {
+  display: grid;
+  justify-content: space-evenly;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  width: 600px;
+  height: 330px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.03); /* Adjust scale factor for your desired scaling effect */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.project:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.overlay a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: Reddit Mono;
   font-size: 20px;
 }
-.btn {
-    cursor: pointer;
-    color: rgb(225, 90, 0);
-    padding: 20px;
-    font-size: 16px;
-    font-family: SixtyFour;
-    background-color: transparent;
-    border: none;
-    gap: 30px;
-  }
-  .btn:hover, .btn:focus {
-    color: rgb(78, 0, 150);
-  }
 
-  .dropdown {
-    font-family: SixtyFour;
-    font-size: 12px;
-  }
-  #flex{
-    display:flex;
-    padding-left: 300px;
-    gap:100px;
-  }
-  .content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .content a:hover {
-    background-color: #fbffc5;
-    opacity: 0.6;
-  }
-  .dropdown:hover .content {
-    display: block;
-  }
+.overlay a:hover {
+  text-decoration: underline;
+}
