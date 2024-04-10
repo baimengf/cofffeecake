@@ -11,7 +11,7 @@ body {
 #head {
   display: flex;
   justify-content: center;
-  padding: 100px;
+  padding: 50px;
 }
 
 h1 {
@@ -23,10 +23,14 @@ h1 {
 
 a {
   color: cornflowerblue;
+  font-family: Reddit Mono;
+  font-size: 15px;
 }
 
 #portfolio {
   display: grid;
+  gap:10px;
+  grid-area: 1/2/3;
   justify-content: space-evenly;
 }
 
@@ -41,7 +45,9 @@ a {
   border-radius: 20px;
   transition: transform 0.3s ease-in-out;
 }
-
+.prototype{
+  padding-left: 10%;
+}
 .project:hover {
   transform: scale(1.03); /* Adjust scale factor for your desired scaling effect */
 }
