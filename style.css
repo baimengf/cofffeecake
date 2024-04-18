@@ -4,7 +4,8 @@ html {
   
 body {
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(145, 234, 255, 1) 44%, rgb(253, 255, 222) 89%);
-    padding-left: 24%;
+    margin: auto;
+    width: 50%;
 }
 
 #rw{
