@@ -12,6 +12,13 @@ body {
     width: 750px;
 }
 
+img{
+    width:450px;
+}
+.fun{
+    display: flex;
+    margin: 30px;
+}
 a {
     color: cornflowerblue;
     font-family: Reddit Mono;
