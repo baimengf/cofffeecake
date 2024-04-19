@@ -24,9 +24,20 @@ a {
     font-family: Reddit Mono;
     font-size: 15px;
 }
-
+h2{
+    font-family: Reddit Mono;
+    font-size: 20px;
+}
+p{
+    font-family: Reddit Mono;
+    font-size: 15px;
+}
 h1 {
-    position: relative;
+    position:relative;
+    text-align: center;
     font-family: Reddit Mono;
     font-size: 25px;
+}
+.yes{
+    width: 750px;
 }
