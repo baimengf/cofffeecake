@@ -22,21 +22,25 @@ section{
     padding-bottom: 50px;
     padding-top: 50px;
 }
-img{
-    width:450px;
-}
 .fun{
     display: flex;
-    margin: 30px;
     gap: 10px;
 }
+figcaption{
+    font: Reddit Mono;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
 #posters{
-    height: 450px;
     gap: 20px;
     width: 100%;
     margin: 0%;
 }
+#poster{
+    width:400px;
+}
 #illustration{
+    width:600px;
     margin: 0%;
     width: 850px;
     height: auto;
