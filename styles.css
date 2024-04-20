@@ -29,7 +29,7 @@ a {
 #portfolio {
   display: grid;
   grid-template-columns: repeat(2,minmax(0,1fr));
-  grid-column-gap: 4px;
+  grid-column-gap: 50px;
   grid-row-gap: 10px;
   grid-auto-rows: min-content;
   padding-bottom: 60px;
