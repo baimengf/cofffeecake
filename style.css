@@ -3,8 +3,8 @@ html {
 }
   
 body {
-    background: url("images/gradient.png");
-    background-size: cover;
+    /* background: url("images/gradient.png");
+    background-size: cover; */
     margin: auto;
     width: 50%;
 }
@@ -17,7 +17,7 @@ article{
 }
 #rw{
     width: 750px;
-    border-bottom: solid 8px rgba(145, 234, 255, 1);
+    border-bottom: solid 8px rgb(90, 90, 90);
 }
 section{
     padding-bottom: 50px;

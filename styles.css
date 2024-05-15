@@ -3,15 +3,24 @@ html {
 }
 
 body {
-  background: url("images/gradient.png");
-  background-size: 100%;
-  width: 1200px;
-  margin: 0 auto;
+  /* background: url("images/gradient.png");
+  background-size: 100%; */
+  width: auto;
+  margin: auto;
 }
-#head {
+
+#container{
   display: flex;
+}
+
+#card{
+  border-right: solid 1px;
+}
+
+#head {
+  display: block;
   justify-content: center;
-  padding: 50px;
+  padding: 20px;
 }
 
 h1 {
@@ -19,21 +28,57 @@ h1 {
   position: relative;
   font-family: Reddit Mono;
   font-size: 15px;
+  font-weight: 400;
 }
 
 a {
-  color: cornflowerblue;
+  color: rgb(0, 124, 30);
   font-family: Reddit Mono;
   font-size: 15px;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.topnav{
+  /* position: relative; */
+  /* z-index: 2; */
+  width: 100%;
+  box-sizing: border-box;
+  /* padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+  padding-left: 3vw;
+  padding-right: 3vw; */
+  pointer-events: auto;
+}
+.topnav a {
+  margin-left: 42%;
+  color: rgb(115, 160, 0);
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  color: rgb(163, 227, 0);}
+
+.topnav a.active {
+  border-bottom: solid rgba(0, 0, 0, 0.5);
+}
 
 #portfolio {
-  display: grid;
+  /* width: 1400px; */
+  /* display: grid;
   grid-template-columns: repeat(2,minmax(0,1fr));
   grid-column-gap: 50px;
   grid-row-gap: 10px;
   grid-auto-rows: min-content;
-  padding-bottom: 60px;
+  padding-bottom: 60px; */
+  margin: 10%;
 }
 
 .project {
@@ -45,6 +90,7 @@ a {
   margin-bottom: 20px;
   box-sizing: border-box;
   border-radius: 20px;
+  border: solid 1px;
   transition: transform 0.3s ease-in-out;
 }
 .prototype{
@@ -89,15 +135,14 @@ a {
   text-decoration: underline;
 }
 
-footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
+footer {
   width: 100%;
-  background-color: rgba(145, 234, 255, 1);
+  padding: 10px;
+  border-top: solid rgba(0, 0, 0, 0.5);
   color: rgba(0, 0, 0, 0.5);
   font-family: Reddit Mono;
   font-size: 15px;
   text-align: center;
-  z-index: 2;
+  z-index: 2; 
+  margin-bottom: 0; 
 }

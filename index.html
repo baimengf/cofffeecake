@@ -17,39 +17,46 @@
         </script>
     </head>
     <body>
-        <section id="head">
-            <h1>
-                Hey there, my name is Baimeng, a UX Designer 👋<br>
-                I am passionate about building solutions for social good with a focus on thoughtful user experience. Currently studying Interaction Design and Economics at University of California Davis in Davis CA. <br>
-                You can download my resume <a href="images/Resume.pdf" download="Baimeng_Resume.pdf" class="btn">Here</a>.
-            </h1>
-        </section>
-        <section id="portfolio">
-            <div class="project" id="aggierewards" onclick="redirectToPage('rewards.html')">
-                <img src="images/rewardscover.png" alt="coverimg">
-                <div class="overlay">
-                <h1 class="caption">Aggie Rewards</h1>
-                </div>
+        <div id="container">
+            <div id="card">
+                <section id="head">
+                    <img src="images/key.gif" alt="horse">
+                </section>
+                <section class="topnav">
+                    <ul>
+                        <!-- <li><a href="index.html">Home</a></li> -->
+                        <li><a href="images/Resume.pdf" download="Baimeng_Resume.pdf" class="btn">Resume</a></li>
+                    </ul>
+                </section>
             </div>
-            <div class="project" id="aceconnect" onclick="redirectToPage('aceconnect.html')">
-                <img src="images/connectcover.png" alt="coverimg">
-                <div class="overlay">
-                <h1 class="caption">ACE Connect</h1>
+
+            <section id="portfolio">
+                <div class="project" id="aggierewards" onclick="redirectToPage('rewards.html')">
+                    <img src="images/rewardscover.png" alt="coverimg">
+                    <div class="overlay">
+                    <h1 class="caption">Aggie Rewards</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="project" id="forfun" onclick="redirectToPage('everypicture.html')">
-                <img src="images/picturecover.jpg" alt="coverimg">
-                <div class="overlay">
-                <h1 class="caption">Every Picture</h1>
+                <div class="project" id="forfun" onclick="redirectToPage('everypicture.html')">
+                    <img src="images/picturecover.jpg" alt="coverimg">
+                    <div class="overlay">
+                    <h1 class="caption">Every Picture</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="project" id="forfun" onclick="redirectToPage('forfun.html')">
-                <img src="images/cover.png" alt="coverimg">
-                <div class="overlay">
-                <h1 class="caption">Featured Work</h1>
+                <div class="project" id="aceconnect" onclick="redirectToPage('aceconnect.html')">
+                    <img src="images/connectcover.png" alt="coverimg">
+                    <div class="overlay">
+                    <h1 class="caption">ACE Connect</h1>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <div class="project" id="forfun" onclick="redirectToPage('forfun.html')">
+                    <img src="images/cover.png" alt="coverimg">
+                    <div class="overlay">
+                    <h1 class="caption">Featured Work</h1>
+                    </div>
+                </div>
+            </section>
+        </div>
         <footer>
             <p>HTML page by Baimeng Fan | Last Updated:2024/4/18</p>
         </footer>
